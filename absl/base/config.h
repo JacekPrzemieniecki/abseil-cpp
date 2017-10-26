@@ -380,11 +380,8 @@
 // check the language version.
 // TODO(zhangxy): fix tests before enabling aliasing for `std::any`,
 // `std::string_view`.
-#if defined(_MSC_VER) && _MSC_VER >= 1910 && \
-    ((defined(_MSVC_LANG) && _MSVC_LANG > 201402) || __cplusplus > 201402)
 // #define ABSL_HAVE_STD_ANY 1
 #define ABSL_HAVE_STD_OPTIONAL 1
 #define ABSL_HAVE_STD_STRING_VIEW 1
-#endif
 
 #endif  // ABSL_BASE_CONFIG_H_
